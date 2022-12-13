@@ -1,0 +1,23 @@
+.logo {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.logo a {
+  color: #f6cb1c;
+  font-size: 2.2rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+@media (max-width: 992px) {
+  .logo a {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .logo a {
+    font-size: 1.8rem;
+  }
+}

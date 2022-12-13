@@ -1,0 +1,73 @@
+.form {
+  width: 600px;
+  margin: 50px auto;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.087);
+}
+
+.form h3 {
+  font-size: 2.5rem;
+  margin: 2rem 0 2rem;
+  text-transform: capitalize;
+  color: #666;
+}
+
+.form hr {
+  width: 60%;
+  margin: 1.5rem auto;
+  border: 1px solid rgb(201, 36, 36);
+}
+
+.btn {
+  font-size: 2rem;
+  padding: 1rem 1.5rem;
+  margin: 1.5rem auto;
+  text-transform: capitalize;
+  display: block;
+}
+
+.loginAfterResetBtn {
+  display: block;
+  width: fit-content;
+  margin: 2rem auto;
+}
+
+.forgot {
+  font-size: 1.4rem;
+}
+
+.forgot a {
+  color: royalblue;
+  font-weight: 500;
+}
+
+.success {
+  font-size: 1.2rem;
+  color: rgb(22, 200, 22);
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+@media (max-width: 767px) {
+  .form {
+    width: 80%;
+    padding: 2rem 0.5rem;
+  }
+  .form h3 {
+    font-size: 1.2rem;
+    margin-top: 0;
+  }
+  .btn {
+    padding: 0.75rem;
+    font-size: 1.3rem;
+  }
+
+  .form hr {
+    margin: 1rem auto;
+  }
+  .forgot {
+    font-size: 1rem;
+  }
+}

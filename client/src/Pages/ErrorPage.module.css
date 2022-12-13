@@ -1,0 +1,15 @@
+.error {
+  text-align: center;
+  background-color: #eee;
+  width: 60%;
+  margin: 50px auto;
+  padding: 1rem;
+}
+
+.error h2 {
+  font-size: 2rem;
+}
+
+.error p {
+  color: #777;
+}

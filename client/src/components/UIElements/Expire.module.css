@@ -1,0 +1,14 @@
+.msg {
+  color: rgb(10, 168, 10);
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  text-align: center;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+@media (max-width: 767px) {
+  .msg {
+    font-size: 1.2rem;
+  }
+}

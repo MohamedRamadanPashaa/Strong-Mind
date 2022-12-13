@@ -1,0 +1,31 @@
+.mainTop5 {
+  flex: 2;
+}
+
+.MyPerformance {
+  padding: 0;
+  width: 100%;
+}
+
+.MyPerformance:not(:last-child) {
+  margin-bottom: 3rem;
+}
+
+.mainTop5 h3 {
+  margin: 1rem auto;
+  width: 90%;
+  font-size: 1.8rem;
+  background-color: #eee;
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  text-transform: capitalize;
+  box-shadow: 0 0 4px 2px rgba(204, 204, 204, 0.47);
+}
+
+@media (max-width: 767px) {
+  .MyPerformance:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}

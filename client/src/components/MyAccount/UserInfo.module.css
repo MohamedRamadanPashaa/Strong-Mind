@@ -1,0 +1,56 @@
+.userInfo {
+  flex: 1;
+  background-color: #f6ca1c58;
+}
+
+.userInfo ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.userInfo ul li {
+  border-bottom: 1px solid #fff;
+  padding: 0;
+}
+
+.userInfo ul li a {
+  padding: 2rem 1.2rem;
+  color: #777;
+  font-size: 1.3rem;
+  font-weight: bold;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  transition: 0.3s;
+}
+
+@media (max-width: 767px) {
+  .userInfo {
+    width: fit-content;
+  }
+  .userInfo ul {
+    display: flex;
+  }
+
+  .userInfo ul li {
+    width: fit-content;
+  }
+
+  .userInfo ul li a {
+    padding: 1rem;
+    font-size: 0.75rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .userInfo ul li:not(:last-child) a {
+    border-right: 2px solid #fff;
+  }
+}
+
+/* .userInfo ul li a:hover, */
+.userInfo ul li a.active {
+  background-color: rgb(173, 172, 172);
+  color: #fff;
+}

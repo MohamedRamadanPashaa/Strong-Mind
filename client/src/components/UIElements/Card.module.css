@@ -1,0 +1,83 @@
+a {
+  text-decoration: none;
+}
+
+.card {
+  border: 2px solid rgb(238, 238, 238);
+  border-radius: 20px;
+  box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.169);
+}
+
+.card img {
+  width: 100%;
+  filter: brightness(0.9);
+  border-radius: 20px 20px 0 0;
+  transition: 0.3s;
+}
+
+.card:hover img {
+  filter: brightness(1);
+}
+
+.text {
+  text-align: center;
+  position: relative;
+  padding: 15px 0 20px;
+}
+
+.text h3 {
+  text-transform: uppercase;
+  margin: 0;
+  color: #f6cb1c;
+  font-size: 1.7rem;
+  padding: 0 0 0.5rem 0;
+  border-bottom: #f6cb1c solid 3px;
+  width: fit-content;
+  text-align: center;
+  margin: auto;
+}
+
+.text p {
+  color: rgb(72, 72, 72);
+  text-transform: capitalize;
+  transition: 0.3s;
+  margin: 0;
+  padding: 1rem;
+}
+
+@media (max-width: 767px) {
+  .text h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .text p {
+    font-size: 0.8rem;
+  }
+}
+
+.card:hover p {
+  color: rgb(85, 84, 84);
+}
+
+.text::after {
+  content: "";
+  height: calc(100% + 4px);
+  width: 0;
+  background-color: rgba(238, 238, 238, 0.47);
+  position: absolute;
+  top: -4px;
+  left: 50%;
+  border-radius: 0 0 20px 20px;
+  transition: 0.3s;
+  z-index: -1;
+}
+
+.card:hover .text::after {
+  width: 100%;
+  left: 0;
+}
+
+.card:hover .card {
+  transform: translateY(-50px);
+}

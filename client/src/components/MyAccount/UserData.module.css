@@ -1,0 +1,26 @@
+.userData {
+  flex: 2;
+}
+
+.userData hr {
+  border: 1px solid #f6cb1c;
+  width: 50%;
+  margin: 40px auto;
+}
+
+.userData h3 {
+  font-size: 2rem;
+  margin: 1rem auto;
+  color: #777;
+  text-align: center;
+  background-color: rgba(204, 204, 204, 0.34);
+  padding: 0.5rem 1rem;
+  color: #000;
+}
+
+@media (max-width: 767px) {
+  .userData h3 {
+    font-size: 1.3rem;
+    margin: 0.5rem auto;
+  }
+}

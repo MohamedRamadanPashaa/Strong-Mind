@@ -1,0 +1,59 @@
+.trainStart {
+  width: 80%;
+  margin: 50px auto;
+  text-align: center;
+  background-color: rgb(243, 243, 243);
+  padding: 3rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.trainStart h2 {
+  background-color: rgba(0, 0, 0, 0.655);
+  width: fit-content;
+  margin: auto;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+.trainStart p {
+  color: #777;
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+
+.button {
+  background-color: #f0c51a;
+  width: 200px;
+  height: 200px;
+  color: rgb(67, 66, 66);
+  border-radius: 50%;
+  font-size: 3rem;
+}
+
+.button:hover {
+  color: black;
+  background-color: #f7c910;
+  letter-spacing: 1.2px;
+}
+
+@media (max-width: 767px) {
+  .trainStart {
+    padding: 1.5rem 1rem;
+  }
+  .trainStart h2 {
+    font-size: 2rem;
+  }
+  .trainStart p {
+    font-size: 1rem;
+  }
+
+  .button {
+    width: 150px;
+    height: 150px;
+    font-size: 2rem;
+  }
+}

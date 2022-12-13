@@ -1,0 +1,67 @@
+.backdrop {
+  z-index: 100;
+  position: fixed;
+  top: 22vh;
+  left: 10%;
+  width: 80%;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  border-radius: 8px;
+}
+
+.backdrop header {
+  max-width: 100%;
+  padding: 1rem 0.5rem;
+  background-color: #f6cb1c;
+  color: #000;
+  border-radius: 8px 8px 0 0;
+}
+
+.backdrop header h2 {
+  margin: 0.5rem;
+  font-size: 2rem;
+}
+
+.backdrop form div {
+  padding: 1rem 0.5rem;
+}
+
+.backdrop form div p {
+  padding: 0;
+  font-size: 1.5rem;
+}
+
+.backdrop footer {
+  padding: 1rem 0.5rem;
+  text-align: end;
+}
+
+.backdrop footer button {
+  margin-right: 1rem;
+  font-size: 2rem;
+}
+
+@media (max-width: 767px) {
+  .backdrop header {
+    padding: 0.5rem;
+  }
+  .backdrop header h2 {
+    font-size: 1.5rem;
+  }
+
+  .backdrop form div {
+    padding: 0.5rem;
+  }
+
+  .backdrop form div p {
+    font-size: 1.2rem;
+  }
+
+  .backdrop footer {
+    padding: 0.5rem;
+  }
+
+  .backdrop footer button {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,135 @@
+.nav {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  margin: 0;
+}
+
+.nav li {
+  padding: 0;
+  margin: 0;
+}
+
+.nav li a {
+  color: white;
+  font-size: 1.5rem;
+  padding: 1.55rem 1rem;
+  text-decoration: none;
+  transition: 0.3s;
+  position: relative;
+}
+
+.nav li a:hover,
+.nav li a.active {
+  color: #f6cb1c;
+  background-color: rgb(127, 127, 127);
+  border-color: rgb(127, 127, 127);
+}
+
+.nav li a:hover::after,
+.nav li a.active::after {
+  content: "";
+  width: 101%;
+  height: 3px;
+  background-color: #f6cb1c;
+  position: absolute;
+  left: -0.5%;
+  bottom: -1.5px;
+}
+
+@media (min-width: 768px) {
+  .nav li a:hover::after,
+  .nav li a.active::after {
+    bottom: -4px;
+  }
+}
+
+.nav .login,
+.nav .myname {
+  border: #f6cb1c 1px solid;
+  padding: 0.5rem 0.7rem;
+  color: #f6cb1c;
+  font-weight: bold;
+  font-size: 1.7rem;
+  margin-left: 1rem;
+  position: relative;
+}
+
+.nav .login:hover,
+.nav .myname:hover {
+  color: #fff;
+  background-color: #f6cb1c;
+}
+
+.nav .myname::after {
+  content: "";
+  position: absolute;
+  border-width: 20px;
+  border-color: #f6cb1c transparent transparent transparent;
+  border-style: solid;
+  bottom: -41px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (max-width: 767px) {
+  .nav {
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 70%;
+    height: 100vh;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .nav li {
+    padding: 0;
+    margin: 0.5rem 0;
+  }
+
+  .nav li a {
+    color: #f6cb1c;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+    border: #f6cb1c 1px solid;
+  }
+
+  .nav .login,
+  .nav .myname {
+    margin-left: 0;
+    position: relative;
+    font-size: 1.3rem;
+  }
+
+  .nav .myname {
+    margin-top: 0.7rem;
+  }
+
+  .navNamediv {
+    position: relative;
+  }
+
+  .login {
+    display: block;
+    width: 150px;
+    margin: 20px auto;
+    text-align: center;
+    font-weight: bold;
+  }
+}
+
+@media (max-width: 992px) {
+  .nav li a {
+    padding: 1.55rem 1rem;
+    font-size: 1.7rem;
+    font-weight: bold;
+  }
+  .nav .myname {
+    margin-left: 0.5rem;
+  }
+}

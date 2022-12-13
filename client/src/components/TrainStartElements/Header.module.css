@@ -1,0 +1,32 @@
+.testHead {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px auto;
+  background-color: #eee;
+  padding: 0.5rem 1rem;
+  font-size: 1.6rem;
+  border: 2px solid rgb(201, 198, 198);
+}
+
+.totalQ {
+  font-weight: bold;
+  color: rgb(44, 43, 43);
+}
+
+.testHead .rightClass {
+  font-weight: bold;
+  color: rgb(11, 195, 11);
+}
+
+.testHead .falseClass {
+  font-weight: bold;
+  color: #e95f45;
+}
+
+@media (max-width: 767px) {
+  .testHead {
+    font-size: 1.2rem;
+  }
+}

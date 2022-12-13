@@ -1,0 +1,60 @@
+.form_input {
+  width: 100%;
+}
+
+.form_input label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: rgb(78, 76, 76);
+  font-size: 1.7rem;
+}
+
+.form_input input,
+.form_input textarea {
+  width: 80%;
+  padding: 1rem 1.5rem;
+  border: 1px solid #ddd;
+  font-size: 1.5rem;
+  transition: 0.3s;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.form_input input:focus,
+.form_input input:active,
+.form_input textarea:focus,
+.form_input textarea:active {
+  outline: none;
+  box-shadow: 0 0 5px 1px #f6ca1c5b;
+}
+
+.form_input input::placeholder,
+.form_input textarea::placeholder {
+  color: rgb(155, 154, 154);
+}
+
+.error label,
+.error p {
+  color: #e91f45;
+}
+
+.error p {
+  margin: 0 0 1rem;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
+
+@media (max-width: 767px) {
+  .form_input label {
+    font-size: 1.5rem;
+  }
+  .form_input input,
+  .form_input textarea {
+    font-size: 1.2rem;
+    padding: 0.75rem;
+  }
+  .error p {
+    font-size: 1rem;
+    margin: -10px 0 0.5rem;
+  }
+}

@@ -1,0 +1,13 @@
+.mainQ {
+  background-color: rgb(245, 243, 243);
+  width: 90%;
+  margin: 2rem auto;
+  padding: 0.5rem 0;
+  border: #ccc 2px solid;
+}
+
+@media (max-width: 767px) {
+  .mainQ {
+    padding: 0;
+  }
+}
