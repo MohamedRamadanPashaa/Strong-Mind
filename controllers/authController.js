@@ -44,7 +44,7 @@ export const signup = catchAsync(async (req, res, next) => {
     token: crypto.randomBytes(32).toString("hex"),
   }).save();
 
-  const url = `http://localhost:3000/user:${newUser._id}:${token.token}`;
+  const url = `https://strong-mind.onrender.com/user:${newUser._id}:${token.token}`;
 
   sendEmail(
     newUser,
@@ -131,7 +131,7 @@ export const login = catchAsync(async (req, res, next) => {
         token: crypto.randomBytes(32).toString("hex"),
       }).save();
 
-      const url = `http://localhost:3000/user:${user._id}:${token.token}`;
+      const url = `https://strong-mind.onrender.com/user:${user._id}:${token.token}`;
 
       sendEmail(
         user,
@@ -309,7 +309,7 @@ export const forgotPassword = catchAsync(async (req, res, next) => {
   await user.save({ validateBeforeSave: false });
 
   try {
-    const url = `http://localhost:3000/${resetToken}`;
+    const url = `https://strong-mind.onrender.com/${resetToken}`;
 
     sendEmail(
       user,
