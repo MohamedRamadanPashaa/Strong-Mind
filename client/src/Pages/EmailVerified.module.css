@@ -31,3 +31,21 @@
   width: fit-content;
   margin: 1rem auto;
 }
+
+@media (max-width: 767px) {
+  .verified {
+    max-width: 300px;
+    padding: 1rem;
+  }
+  .verified div {
+    font-size: 6rem;
+  }
+
+  .verified a {
+    font-size: 1.5rem;
+  }
+
+  .error h2 {
+    font-size: 1rem;
+  }
+}
