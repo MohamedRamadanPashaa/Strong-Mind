@@ -46,7 +46,7 @@ const MainTable = ({ title }) => {
   return (
     <>
       <ErrorModal error={error} onCancel={clearError} />
-      {objectOne.length !== 0 ? (
+      {objectOne.length !== 0 || objectTwo.length !== 0 || action.length !== 0 ? (
         <table className={classes.table}>
           <thead>
             <tr>
