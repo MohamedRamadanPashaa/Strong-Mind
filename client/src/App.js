@@ -39,7 +39,7 @@ const router = createBrowserRouter(
       <Route path="login" element={<Login />} />
       <Route path="/:userIdAndToken" element={<EmailVerified />} />
       <Route path="forgot-password" element={<Forgot />} />
-      <Route path="/reset-password/:resetToken" element={<PasswordReset />} />
+      <Route path="reset-password/:resetToken" element={<PasswordReset />} />
       <Route
         element={
           <ProtectedRoute>
