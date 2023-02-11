@@ -35,7 +35,7 @@ const PasswordReset = () => {
 
     try {
       const data = await sendRequest(
-        `api/v1/users/reset-password/${resetToken}`,
+        `/api/v1/users/reset-password/${resetToken}`,
         "PATCH",
         JSON.stringify({
           password: formState.inputs.passwordNew.value,
