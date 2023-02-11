@@ -309,7 +309,7 @@ export const forgotPassword = catchAsync(async (req, res, next) => {
   await user.save({ validateBeforeSave: false });
 
   try {
-    const url = `https://strong-mind.onrender.com/${resetToken}`;
+    const url = `https://strong-mind.onrender.com/reset-password/${resetToken}`;
 
     sendEmail(
       user,
